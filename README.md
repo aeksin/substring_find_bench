@@ -1,2 +1,3 @@
-# substring_find_bench
-project with time measuring of substring find algorithms(especially Knuth-Morris-Pratt algorithm) implemented in C, GNU Assembly and Python and launched from Python
+# Бенчмарк для алгоритма поиска всех вхождений подстроки в строке
+Проект предназначен для измерения времени работы алгоритма поиска подстроки в строке(в основном там, где не используются встроенные возможности языка Python, реализован алгоритм Кнута — Морриса — Пратта)  
+Написано на C, GNU Assembly и Python, запускается через Python с помощью модуля ctypes
