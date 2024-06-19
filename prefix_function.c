@@ -1,27 +1,4 @@
-#include <stdlib.h>
-#include <stdio.h>
-#include <string.h>
-extern double  slow_pow(double * a,long long * b);
 extern int prefix_function_asm2(const char *str, long long * res_len, long long * str_len, long long * pi);
-double dpow(double a, long long b){
-    double res = slow_pow(&a,&b);
-    return res;
-}
-int hash_str(const char * str, int res_len){
-    int sum = 0;
-    int i=0;
-    while (*str != '\0'){
-        //printf("%c", *str);
-        sum += *str;
-        if (i<2){
-            printf("%d\n", *str);
-        }
-        ++str;
-        i++;
-        
-    }
-    return sum;
-}
 long long  prefix_function_c(const char * str, long long res_len, long long str_len, long long * pi){
     for (long long i=1;i<str_len;i++){
         long long c = pi[i-1];
